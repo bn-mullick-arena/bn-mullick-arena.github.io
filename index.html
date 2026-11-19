@@ -4,29 +4,104 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BN Mullick Arena</title>
-<meta name="robots" content="noindex">
+<meta name="description" content="Official app of the 75th BN Mullick Memorial All India Police Football Championship 2026–27: fixtures, live scores, tables, teams and players.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bn-mullick-arena.github.io/">
 <meta property="og:title" content="BN Mullick Arena">
-<meta property="og:description" content="Temporarily unavailable while we update. Please check back later.">
+<meta property="og:description" content="Official app of the 75th BN Mullick Memorial All India Police Football Championship 2026–27. Tap to download for Android.">
 <meta property="og:image" content="https://bn-mullick-arena.github.io/logo.png">
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="400">
+<meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#060C1E">
 <link rel="icon" type="image/png" href="logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  html { background: #060C1E; }
-  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-         background: radial-gradient(120% 70% at 50% 0%, #14306A 0%, #0B1838 45%, #060C1E 100%);
-         color: #fff; font-family: Manrope, system-ui, sans-serif; text-align: center; }
-  main { max-width: 420px; padding: 32px 20px; }
-  img { width: 140px; height: 140px; }
-  h1 { margin: 18px 0 8px; font-size: 30px; font-weight: 800; color: #F2C45A; }
-  p { margin: 0; color: #B9C3D6; font-size: 16px; line-height: 1.55; font-weight: 600; }
+  :root {
+    --bg: #060C1E;
+    --bg2: #0B1838;
+    --card: rgba(255, 255, 255, 0.06);
+    --line: rgba(242, 196, 90, 0.35);
+    --gold: #F2C45A;
+    --gold2: #E0A93A;
+    --ink: #16100A;
+    --text: #FFFFFF;
+    --muted: #B9C3D6;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  html { background: var(--bg); }
+  body {
+    min-height: 100vh;
+    background: radial-gradient(120% 70% at 50% 0%, #14306A 0%, var(--bg2) 45%, var(--bg) 100%);
+    color: var(--text);
+    font-family: Manrope, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .tricolour { height: 6px; background: linear-gradient(90deg, #FF9933 0 33.3%, #FFFFFF 33.3% 66.6%, #138808 66.6%); }
+  main { width: 100%; max-width: 480px; margin: 0 auto; padding: 32px 16px 40px; text-align: center; overflow-wrap: anywhere; }
+  .logo { width: 168px; height: 168px; filter: drop-shadow(0 10px 30px rgba(242, 196, 90, 0.35)); }
+  h1 { margin: 18px 0 6px; font-size: 34px; font-weight: 800; letter-spacing: -0.5px;
+       background: linear-gradient(180deg, #FFF6CC, var(--gold) 55%, var(--gold2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .event { margin: 0 auto; max-width: 380px; color: var(--muted); font-size: 15px; line-height: 1.5; font-weight: 600; }
+  .event sup { font-size: 0.6em; }
+  .download {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    margin: 28px auto 10px; padding: 18px 24px; width: 100%; max-width: 360px;
+    border-radius: 999px; text-decoration: none; color: var(--ink); font-size: 20px; font-weight: 800;
+    background: linear-gradient(180deg, #FFE59A, var(--gold) 50%, var(--gold2));
+    box-shadow: 0 10px 30px rgba(242, 196, 90, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+  .download:active { transform: translateY(1px); }
+  .download svg { width: 24px; height: 24px; }
+  .meta { color: var(--muted); font-size: 13px; }
+  section { margin-top: 30px; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 18px 18px 6px; }
+  h2 { margin: 0 0 12px; color: var(--gold); font-size: 13px; font-weight: 800; letter-spacing: 1.4px; text-transform: uppercase; }
+  ol, ul { margin: 0; padding: 0 0 0 20px; }
+  li { margin: 0 0 12px; line-height: 1.5; font-size: 15px; }
+  li b { color: var(--text); }
+  .note { color: var(--muted); font-size: 13px; margin: -4px 0 12px; }
+  footer { margin-top: 28px; color: var(--muted); font-size: 12px; line-height: 1.6; text-align: center; }
 </style>
 </head>
 <body>
+<div class="tricolour" aria-hidden="true"></div>
 <main>
-  <img src="logo.png" alt="75th BN Mullick Memorial championship logo">
+  <img class="logo" src="logo.png" alt="75th BN Mullick Memorial championship logo">
   <h1>BN Mullick Arena</h1>
-  <p>The app is temporarily unavailable while we make some updates.<br>Please check back later.</p>
+  <p class="event">Official app of the 75<sup>th</sup> BN Mullick Memorial All India Police Football Championship 2026–27</p>
+
+  <a class="download" href="https://github.com/bn-mullick-arena/app/releases/latest/download/BN-Mullick-Arena.apk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+    Download the app
+  </a>
+  <div class="meta">Android · always the latest version · about 70 MB</div>
+
+  <section>
+    <h2>How to install</h2>
+    <ol>
+      <li>Tap <b>Download the app</b>.</li>
+      <li>If Chrome says <i>“File might be harmful”</i>, tap <b>Download anyway</b>. This is normal for apps shared outside the Play Store.</li>
+      <li>Open the downloaded file and tap <b>Install</b>. Allow <i>“Install unknown apps”</i> if Android asks.</li>
+      <li>Open <b>BN Mullick Arena</b> → <b>Get Started</b> → <b>Create account</b>.</li>
+    </ol>
+    <p class="note">Already have the app? Install over it — your data stays. The app also tells you when a new version is out.</p>
+  </section>
+
+  <section>
+    <h2>In the app</h2>
+    <ul>
+      <li>Fixtures, live scores and results</li>
+      <li>Group tables and the knockout bracket</li>
+      <li>Goal scorers with the minute they scored</li>
+      <li>Every team and player — search by name, team or photo</li>
+      <li>Match and result posters, ready to share</li>
+    </ul>
+  </section>
+
+  <footer>Hosted by Assam Rifles · Agartala, Tripura · 16–28 November 2026<br>Android phones only</footer>
 </main>
 </body>
 </html>
